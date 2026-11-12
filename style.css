@@ -1,0 +1,170 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Overall page */
+body {
+  background: #faf9f6;
+  color: #292925;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  max-width: 100%;
+}
+
+/* Navigation */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 8%;
+  border-bottom: 1px solid #e8e6e0;
+  font-family: Arial, sans-serif;
+}
+
+.site-name {
+  color: #292925;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a,
+footer a {
+  color: #66645e;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+  color: #a16b4a;
+}
+
+/* Main content */
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 35px;
+}
+
+/* Introduction */
+.intro {
+  padding: 115px 0 105px;
+  max-width: 650px;
+}
+
+.eyebrow {
+  color: #a16b4a;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: normal;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.intro-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.intro-note {
+  color: #77746d;
+  font-size: 16px;
+}
+
+/* Content sections */
+.content-section {
+  padding: 65px 0;
+  border-top: 1px solid #e8e6e0;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: normal;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+
+.section-intro {
+  color: #77746d;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.placeholder {
+  background: #f2f0eb;
+  padding: 25px;
+  color: #77746d;
+  font-size: 14px;
+}
+
+.placeholder a {
+  color: #a16b4a;
+  text-decoration: none;
+}
+
+.small-note {
+  display: block;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8%;
+  border-top: 1px solid #e8e6e0;
+  color: #88857e;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .intro {
+    padding: 75px 0;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  .intro-text {
+    font-size: 18px;
+  }
+
+  footer {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
